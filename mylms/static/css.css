@@ -1,0 +1,40 @@
+body{
+     margin:0;
+     padding:0;
+     background:url(lib6.jpg);
+     background-size:cover;
+     background-position:center;
+     font-family:sans-serif;
+}
+.loginbox{
+width: 400px;
+height: 510px;
+background: rgb(0, 0, 0);
+color: #fff;
+top: 55%;
+left: 50%;
+position: absolute;
+transform: translate(-50%,-50%);
+box-sizing: border-box;
+font: 1em Times New Roman;
+}
+.avatar{
+width: 100px;
+height: 100px;
+border-radius: 50%;
+top: -50px;
+position: absolute;
+left: calc(50% - 50px);
+}
+.box{
+     width: 400px;
+     height: 510px;
+     background: rgb(0, 0, 0);
+     color: #fff;
+     top: 55%;
+     left: 50%;
+     position: absolute;
+     transform: translate(-50%,-50%);
+     box-sizing: border-box;
+     font: 1em Times New Roman;
+     }

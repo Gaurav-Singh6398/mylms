@@ -1,0 +1,25 @@
+{% load staticfiles %} 
+{% static '' as baseUrl %} 
+<!doctype html>
+<html>
+<head>
+<title>LIBSMANAGE</title> 
+   
+<link rel="stylesheet"  type="text/css"   href="{{baseUrl}}css.css">
+</head> 
+<body>
+<div class="loginbox">
+<img src="{{baseUrl}}icon.jpg" class="avatar">
+<br><br><br>
+<h1 style="color:white;">MODIFY RECORDS</h1>
+<a href="modrec">1. ALL RECORDS</a><br><br>
+<a href="m1">2. BY BOOK NAME</a><br><br>
+<a href="m2">3. BY AUTHOR</a><br><br>
+<a href="m3">4. BY QUANTITY</a><br><br>
+<a href="m4">5. BY PRICE</a><br><br>
+<a href="m5">6. BY DOP</a><br><br>
+{{msg}}
+</div> 
+
+
+</body>

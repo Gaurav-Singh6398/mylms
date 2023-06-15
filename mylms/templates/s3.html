@@ -1,0 +1,23 @@
+{% load staticfiles %} 
+{% static '' as baseUrl %} 
+<!doctype html>
+<html>
+<head>
+<title>MODIFY BOOKS RECORDS</title> 
+   
+<link rel="stylesheet"  type="text/css"   href="{{baseUrl}}css.css">
+<link rel="stylesheet"  type="text/css"   href="{{baseUrl}}css1.css">
+</head> 
+<body>
+<div class="loginbox">
+<img src="{{baseUrl}}icon.jpg" class="avatar">
+<br><br><br>
+<h1 style="color:pink;">SEARCH BOOK</h1>
+<form action="s3">
+Enter the book author
+<input type="text"  name="aurhor"><br><br>
+<input type="submit" value="submit">
+</form>
+</body>
+
+</html>

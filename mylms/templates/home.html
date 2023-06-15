@@ -1,0 +1,31 @@
+{% load staticfiles %} 
+{% static '' as baseUrl %} 
+<!doctype html>
+<html>
+<head>
+<title>LIBSMANAGE</title> 
+   
+<link rel="stylesheet"  type="text/css"   href="{{baseUrl}}css.css">
+</head> 
+<body>
+<div class="loginbox">
+<img src="{{baseUrl}}icon.jpg" class="avatar">
+<br><br><br>
+<h1 style="color:white;">LIBRARY MANAGEMENT </h1>
+<a href="addrec">1. ADD BOOK</a><br><br>
+<a href="modify">2. MODIFY BOOK DETAILS</a><br><br>
+<a href="delrec">3. DELETE BOOKS</a><br><br>
+<a href="searchrec">4. SEARCH BOOK</a><br><br>
+<a href="caddrec">5. ADD CLIENT INFO</a><br><br>
+<a href="cmodrec">6. MODIFY CLIENT INFO</a><br><br>
+<a href="issue">7. ISSUE A BOOK</a><br><br>
+<a href="returnb">8. RETURN A BOOK</a><br><br>
+<a href="defaulter">9. DEFAULTER</a><br><br>
+{{msg}}
+</div> 
+
+
+</body>
+
+
+</html>

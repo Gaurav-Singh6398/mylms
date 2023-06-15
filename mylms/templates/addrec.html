@@ -1,0 +1,29 @@
+{% load staticfiles %} 
+{% static '' as baseUrl %} 
+<html>
+<body>
+<link rel="stylesheet"  type="text/css"   href="{{baseUrl}}css.css">
+<link rel="stylesheet"  type="text/css"   href="{{baseUrl}}css1.css">
+<div class="box">
+<form action="add">
+<img src="{{baseUrl}}icon.jpg" class="avatar">
+<br><br><br>
+<h1 style="color:white;">ADD BOOK </h1>
+Enter Book Number 
+<input type="text" name="bno"><br><br>
+Enter Book Name  
+<input type="text" name="bname"><br><br>
+Enter Book Author 
+<input type="text" name="author"><br><br>
+Enter Book Quantity 
+<input type="text" name="qty"><br><br>
+Enter Book Price 
+<input type="text" name="price"><br><br>
+Enter Date Of Purchase 
+<input type="date" name="dop"><br><br>
+<input type="submit" value="ADD RECORD">
+</form>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+{% load staticfiles %} 
+{% static '' as baseUrl %} 
+<!doctype html>
+<html>
+<head>
+<title>MODIFY BOOKS RECORDS</title> 
+   
+<link rel="stylesheet"  type="text/css"   href="{{baseUrl}}css.css">
+<link rel="stylesheet"  type="text/css"   href="{{baseUrl}}css1.css">
+</head> 
+<body>
+<div class="loginbox">
+<img src="{{baseUrl}}icon.jpg" class="avatar">
+<br><br><br>
+<h1 style="color:pink;">RETURN BOOK</h1>
+<form action="ret">
+        Enter Client Number
+        <input type="text" name="cno"><br><br>
+        Enter Client Name 
+        <input type="text" name="cname"><br><br>
+        Enter Book Name
+        <input type="text" name="bname"><br><br>
+        <input type="submit" value="RETURN BOOK">
+        </form>
+</body>
+
+</html>

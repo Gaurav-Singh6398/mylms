@@ -1,0 +1,64 @@
+{% load staticfiles %} 
+{% static '' as baseUrl %} 
+<!doctype html>
+<html>
+<head>
+<title>MODIFY BOOKS RECORDS</title> 
+ 
+<link rel="icon" type="image/png" href="{{baseUrl}}images/icons/favicon.ico"/>
+<link rel="stylesheet" type="text/css" href="{{baseUrl}}vendor/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="{{baseUrl}}fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="{{baseUrl}}vendor/animate/animate.css">
+<link rel="stylesheet" type="text/css" href="{{baseUrl}}vendor/select2/select2.min.css">
+<link rel="stylesheet" type="text/css" href="{{baseUrl}}vendor/perfect-scrollbar/perfect-scrollbar.css">
+<link rel="stylesheet" type="text/css" href="{{baseUrl}}css/util.css">
+<link rel="stylesheet" type="text/css" href="{{baseUrl}}css/main.css">  
+<link rel="stylesheet"  type="text/css"   href="{{baseUrl}}css.css">
+<link rel="stylesheet"  type="text/css"   href="{{baseUrl}}css1.css">
+</head> 
+
+<body>
+        <div class="container-table100">
+                <div class="wrap-table100">
+                        <div class="table">
+    
+                            <div class="row header">
+                                <div class="cell">
+                                    Book No.
+                                </div>
+                                <div class="cell">
+                                    Book Name
+                                </div>
+                                <div class="cell">
+                                    Author
+                                </div>
+                                <div class="cell">
+                                    Quantity
+                                </div>
+                                <div class="cell">
+                                    Price
+                                </div>
+                                <div class="cell">
+                                    Date Of Purchase
+                                </div>
+                            </div>
+                            {% for i in list %}
+                            <div class="row">
+                                {% for j in i %}
+                                <div class="cell" data-title="Full Name">
+                                    {{j}}
+                                </div>
+                                {% endfor %}
+                            </div>
+                            {% endfor %}
+                        </div>
+                </div>
+            </div>
+<script src="{{baseUrl}}vendor/jquery/jquery-3.2.1.min.js"></script>
+<script src="{{baseUrl}}vendor/bootstrap/js/popper.js"></script>
+<script src="{{baseUrl}}vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="{{baseUrl}}vendor/select2/select2.min.js"></script>
+<script src="{{baseUrl}}js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+{% load staticfiles %} 
+{% static '' as baseUrl %} 
+<!doctype html>
+<html>
+<head>
+<title>MODIFY BOOKS RECORDS</title> 
+   
+<link rel="stylesheet"  type="text/css"   href="{{baseUrl}}css.css">
+<link rel="stylesheet"  type="text/css"   href="{{baseUrl}}css1.css">
+</head> 
+<body>
+<div class="loginbox">
+<img src="{{baseUrl}}icon.jpg" class="avatar">
+<br><br><br>
+<h1 style="color:pink;">MODIFY RECORDS</h1>
+<form action="mod3">
+        Enter Book Number to Modify
+        <input type="text" name="bno"><br><br>
+        Enter New Book Quantity
+        <input type="text" name="qty"><br><br>
+        
+        <input type="submit" value="MODIFY RECORD">
+        </form>
+</body>
+
+</html>
+
